@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猫蜇</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+</head>
+
+<body>
+  <!-- 欢迎视频 -->
+  <video src="./video/welcome.mp4" class="myVideo" autoplay muted controls></video>
+  <!-- content -->
+</body>
+<script>
+  const video = document.querySelector('.myVideo') ?? ''
+  video.addEventListener('ended', function () {
+    video.style.display = 'none'
+    window.location.href = 'index.html'
+  })
+</script>
+
+</html>
